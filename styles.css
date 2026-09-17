@@ -109,6 +109,50 @@ h2 {
   border: 1px solid var(--ink);
   color: var(--ink);
 }
+.download-guide {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.75fr) 1.25fr;
+  gap: 34px;
+  margin-bottom: 60px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+}
+.download-guide h2 {
+  margin-bottom: 12px;
+}
+.download-guide__lead {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.download-steps {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding-left: 24px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.download-steps li {
+  padding-left: 6px;
+}
+.download-steps strong {
+  color: var(--ink);
+}
+code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #edf0ed;
+  color: var(--ink);
+  font-size: 0.92em;
+}
+.download-guide__button {
+  grid-column: 2;
+  justify-self: start;
+  margin-top: -10px;
+}
 .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,6 +287,16 @@ dd {
   .content-grid {
     grid-template-columns: 1fr;
     padding-bottom: 42px;
+  }
+  .download-guide {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-bottom: 42px;
+    padding: 24px;
+  }
+  .download-guide__button {
+    grid-column: auto;
+    margin-top: 0;
   }
   .feature {
     min-height: auto;
